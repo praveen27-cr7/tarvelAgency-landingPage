@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whereway Trips</title>
+    <link rel="icon" href="img/img_logo.png">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body class="cursor-pointer">
+    <!-- NAVBAR -->
+     <div class="container md:mx-auto bg-cyan-200 rounded-br-xl rounded-bl-lg ">
+        <nav class="flex justify-between items-center mx-4">
+        <div class="flex">
+        <img src="img/img_logo.png" class="h-16 w-16" >
+        <h1 class="text-xl font-bold text-nowrap mt-5 text-pink-500">Whereway Trips</h1>
+       </div>
+            <ul class="hidden md:flex space-x-10">
+                <li class="hover:text-gray-400 hover:font-medium"><a href="#">Home</a></li>
+                <li class="hover:text-gray-400 hover:font-medium"><a href="#">About</a></li>
+                <li class="hover:text-gray-400 hover:font-medium"><a href="#">Team</a></li>
+                <li class="hover:text-gray-400 hover:font-medium"><a href="#">Contact</a></li>
+                <li class="hover:text-gray-400 hover:font-medium"><a href="#">Packages</a></li>
+            </ul>
+            <button class="hidden md:block bg-pink-500 px-4 py-2 font-bold text-white rounded-full text-nowrap hover:bg-pink-300">Sign Up</button>
+            <button class="h-6 w-6 mr-3 md:hidden mobile-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </button>
+        </nav>
+     </div>
+
+     <!-- Mobile Menu -->
+      <div class="md:hidden mobile-menu">
+        <ul class="flex flex-col items-center space-y-4">
+            <li class="hover:text-gray-400 hover:font-medium"><a href="#">Home</a></li>
+            <li class="hover:text-gray-400 hover:font-medium"><a href="#">About</a></li>
+            <li class="hover:text-gray-400 hover:font-medium"><a href="#">Team</a></li>
+            <li class="hover:text-gray-400 hover:font-medium"><a href="#">Contact</a></li>
+            <li class="hover:text-gray-400 hover:font-medium"><a href="#">Packages</a></li>
+        <li>
+        <button class="bg-pink-500 px-4 py-2 font-bold text-white rounded-full text-nowrap hover:bg-pink-300">Sign Up</button>
+      </li>
+      </ul>
+    </div>
+
+     <!-- Hero Section -->
+    
+      <!-- <div class="absolute top-28 bg-black bg-opacity-50 inset-0 mx-auto">
+         Overlay
+      </div>  -->
+     <div class="container mx-auto md:flex md:flex-row mt-12">
+      <div class="md:w-1/2 text-center pt-12 md:mx-auto">
+        <h1 class="text-4xl font-bold text-pink-500">Explore the World</h1>
+        <p class="mt-4">We're constantly trying to express overselves and actualize our dreams.
+            If you have the opportunity to play this game .If you have the opportunity
+            to play this game
+        </p>
+        <button class="bg-pink-500 px-4 py-2 font-medium text-white mt-6 rounded-full hover:bg-pink-300">Learn More</button>
+    </div>
+    
+        <div class="md:w-1/2">
+        <img  
+         src="img/heroimg.jpg">
+        </div>
+    </div>
+
+    <!--Main Section -->
+    <div class="container mx-auto">
+        <div class="text-center my-12 ">
+            <h1 class="font-bold text-3xl mb-8 text-pink-500">Discover Your Country</h1>
+            <p class="text-gray-400 md:mx-32 mb-8">Elevate your productivity to new heigths with Windbase.
+                Our platform empowers you empowers you to work smarter, 
+                not harder. Say goodbye to inefficiencies and hello to 
+                streamlined success.
+            </p>
+        </div>
+        <div class="flex">
+            <div class="hidden md:block">
+           <img class="rounded-2xl mx-16  w-96"src="img/main img.jpg" alt=""> 
+            </div>        
+
+        <div>
+            <ul class="grid grid-cols-2 md:mx-8 gap-7 md:ml-20 sm:mx-auto">
+                <li class="text-center">
+            <button>
+                <svg  class="w-20 h-20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    
+                    <g id="SVGRepo_iconCarrier"> <rect width="24" height="24" fill="white"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M5.96802 4H18.032C18.4706 3.99999 18.8491 3.99998 19.1624 4.02135C19.4922 4.04386 19.8221 4.09336 20.1481 4.22836C20.8831 4.53284 21.4672 5.11687 21.7716 5.85195C21.9066 6.17788 21.9561 6.50779 21.9787 6.83762C22 7.15088 22 7.52936 22 7.96801V16.032C22 16.4706 22 16.8491 21.9787 17.1624C21.9561 17.4922 21.9066 17.8221 21.7716 18.1481C21.4672 18.8831 20.8831 19.4672 20.1481 19.7716C19.8221 19.9066 19.4922 19.9561 19.1624 19.9787C18.8491 20 18.4706 20 18.032 20H5.96801C5.52936 20 5.15088 20 4.83762 19.9787C4.50779 19.9561 4.17788 19.9066 3.85195 19.7716C3.11687 19.4672 2.53284 18.8831 2.22836 18.1481C2.09336 17.8221 2.04386 17.4922 2.02135 17.1624C1.99998 16.8491 1.99999 16.4706 2 16.032V7.96802C1.99999 7.52937 1.99998 7.15088 2.02135 6.83762C2.04386 6.50779 2.09336 6.17788 2.22836 5.85195C2.53284 5.11687 3.11687 4.53284 3.85195 4.22836C4.17788 4.09336 4.50779 4.04386 4.83762 4.02135C5.15088 3.99998 5.52937 3.99999 5.96802 4ZM4.31745 6.27777C4.68114 5.86214 5.3129 5.82002 5.72854 6.1837L11.3415 11.095C11.7185 11.4249 12.2815 11.4249 12.6585 11.095L18.2715 6.1837C18.6871 5.82002 19.3189 5.86214 19.6825 6.27777C20.0462 6.69341 20.0041 7.32517 19.5885 7.68885L13.9755 12.6002C12.8444 13.5899 11.1556 13.5899 10.0245 12.6002L4.41153 7.68885C3.99589 7.32517 3.95377 6.69341 4.31745 6.27777Z" fill="#11cfe8"/> </g>
+                    
+                    </svg>
+            </button>
+            <h2 class="font-bold text-xl">Talk With Us</h2>
+            <p class="text-gray-400">Our shared team inboxes ensure seamless collaboration.
+                Keep everyone in the loop effortlessly
+            </p>
+        </li>
+        <li class="text-center">
+            <button>
+                <svg class="w-20 h-20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    
+                    <g id="SVGRepo_iconCarrier"> <path opacity="0.25" d="M15.4363 14.7782C14.841 14.5276 14.1 14.2154 14.1 13.975V12.4059C14.9676 11.7528 15.5 10.6951 15.5 9.6V7.5C15.5 5.5701 13.9299 4 12 4C10.0701 4 8.5 5.5701 8.5 7.5V9.6C8.5 10.6948 9.03235 11.7528 9.9 12.4059V13.975C9.9 14.2007 9.16605 14.5147 8.57665 14.7667C7.15215 15.3757 5 16.2958 5 18.7V19.05H19V18.7C19 16.2801 16.8556 15.3764 15.4363 14.7782Z" fill="#11cfe8"/> <path d="M8.5 9.5V7.5C8.5 5.567 10.067 4 12 4C13.933 4 15.5 5.567 15.5 7.5V9.5C15.5 10.6894 14.9067 11.7402 14 12.3727V13.323C14 13.7319 14.249 14.0996 14.6286 14.2514L16.2146 14.8858C17.8969 15.5587 19 17.1881 19 19H5C5 17.1881 6.10313 15.5587 7.78543 14.8858L9.37139 14.2514C9.75105 14.0996 10 13.7319 10 13.323V12.3727C9.09326 11.7402 8.5 10.6894 8.5 9.5Z" fill="#11cfe8"/> </g>
+                    
+                    </svg>
+            </button>
+            <h2 class="font-bold text-xl">Choose a Guide</h2>
+            <p class="text-gray-400">Our shared team inboxes enable you to deliver 
+                quick and accurate answers instantly
+            </p>
+        </li>
+        <li class="text-center pt-12">
+            <button>
+                <svg class="w-20 h-20" version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 32 32" xml:space="preserve" fill="#000000">
+
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    
+                    <g id="SVGRepo_iconCarrier"> <style type="text/css"> .afiado_een{fill:#18d1f2;} </style> <path class="afiado_een" d="M29,24v4H17v-4h2v-6h-6v6h2v4H3v-4h2V8h2V4h4v4h2l0,2h6V8h2V4h4v4h2v16H29z"/> </g>
+                    
+                    </svg>
+            </button>
+            <h2 class="font-bold text-xl">Start Exploring</h2>
+            <p class="text-gray-400">Strengthen your connections with customers using 
+                our shared team inboxes. Foster meaningful interactions 
+            </p>
+        </li>
+        <li class="text-center pt-12">
+            <button>
+                <svg  class="w-20 h-20" viewBox="0 0 76 76" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" enable-background="new 0 0 76.00 76.00" xml:space="preserve" fill="#000000">
+
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    
+                    <g id="SVGRepo_iconCarrier"> <path fill="#11cfe8" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 41,35L 41,57L 35,57L 35,35L 41,35 Z M 33,44L 33,57L 27,57L 27,44L 33,44 Z M 19,57L 19,51L 25,51L 25,57L 19,57 Z M 57,19L 57,57L 51,57L 51,19L 57,19 Z M 49,27L 49,57L 43,57L 43,27L 49,27 Z "/> </g>
+                    
+                    </svg>
+            </button>
+            <h2 class="font-bold text-xl">Rate Services</h2>
+            <p class="text-gray-400">
+                Manage your team reports will ease.
+                Our shared team inboxes simlify the process for 
+                everyone involved
+            </p>
+        </li>
+       <div> 
+       
+        </ul>
+        </div>
+    </div>
+    </div>
+
+    <!-- Stories Section -->
+     <div class="container  mx-auto mt-20 ">
+        <h1 class="font-bold text-3xl mb-20 text-pink-500 text-center">Top Destinations</h1>
+        <div class="bg-cyan-200 rounded-2xl md:grid grid-cols-3 place-content-center space-x-4 gap-5">
+            <div class=" hover:shadow-2xl hover:bg-pink-200  rounded-xl my-8 mx-4 flex flex-col">
+                <img class="h-44 w-72 rounded-2xl mx-auto pt-3" src="img/mount.jpeg">
+                <h2 class=" text-center text-xl font-bold my-6 ml-2">Mountain</h2>
+                <p class="text-center text-gray-500">Website visitors today demand a frictionless
+                    user expericence-especially when using search 
+                    of the hight standards we tend to offer.
+                </p>
+            </div>
+           <div class="hover:shadow-2xl hover:bg-pink-200 rounded-xl my-8 mx-4 flex flex-col" >
+            <img class="h-44 w-72 rounded-2xl mx-auto pt-3" src="img/beach.jpeg">
+            <h2 class="text-center text-xl font-bold my-6 ">Beach</h2>
+            <p class="text-center text-gray-500">
+                Wealth creation is an evolutionarily recent positive
+                -sum game. Status is an old zero-sum game. Those attacking wealth 
+                creation are often just seeking status
+            </p>
+           </div>
+           <div class="hover:shadow-2xl  hover:bg-pink-200  rounded-xl my-8 mx-4  flex flex-col pr-2">
+            <img class="h-44 w-72 rounded-2xl mx-auto pt-3" src="img/city.jpeg" >
+            <h2 class=" text-center text-xl font-bold my-6 ml-2">Great Area</h2>
+            <p class="text-center text-gray-500 pr-4">
+                Free people make free choices. Free choices mean you
+                get unequal outcomes. You can have freedom, or you can have 
+                equal outcomes. 
+            </p>
+           </div>
+        </div>
+     </div>
+
+     <!-- Guided Section -->
+      <div class="container mx-auto mt-20">
+        <div class="text-center">
+            <h2 class="font-bold text-cyan-400">Drived by excellence</h2>
+            <h1 class="text-4xl font-bold text-pink-500 mt-4 mb-8">Our Guides</h1>
+            <p class="text-center text-gray-500 md:mx-60 mb-14">Our amazing team is the driving force behind our success.
+                Comprised of passionate individuals who are experts in their 
+                respective fields, we work collaboratively to achieve our goals 
+                and exceed expectations.
+            </p>
+        </div>
+        <div class="md:grid md:grid-cols-2 mobile:grid mobile:grid-cols-1 gap-10 md:mx-16">
+            <div class="flex">
+                <img class="w-56 h-80 rounded-xl " src="img/guide1.avif">
+                <div class=" mx-8">
+                <h1 class="text-2xl font-bold text-cyan-900">Sarah Johnson</h1>
+                <h4 class="pt-8 text-pink-800 font-bold">Hiking Guide</h4>
+                <p class="text-gray-500 pt-4">Sarah is a creative marketing guru, known for creating
+                 that captivate audiences
+                </p>
+                <button class="pt-7">
+                    <svg class="w-6 h-6" fill="#d1d1d1"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve" stroke="#d1d1d1">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <g id="SVGRepo_iconCarrier"> <path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7 c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4 c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6 c35.5,0,63.3,23,63.3,72.4V508.1z"/> </g>
+                        
+                        </svg>
+                </button>
+                <button class="pt-7 pl-3">
+                    <svg class="w-6 h-6" viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <g id="SVGRepo_iconCarrier"> <title>twitter [#154]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)" fill="#c3c1c1"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705" id="twitter-[#154]"> </path> </g> </g> </g> </g>
+                        
+                        </svg>
+                </button>
+            </div>
+                
+            </div>
+            <div class="flex  md:mt-0 mt-16"">
+                <img class="w-56 h-80 rounded-xl float-left" src="img/guide2.avif" >
+                <div class="mx-8">
+                <h1 class="text-2xl font-bold text-cyan-900">Emily Turner</h1>
+                <h4 class="pt-8 text-pink-800 font-bold">Outdoor</h4>
+                <p class="text-gray-500 pt-4">Emily is a coding enthusaiast who turns 
+                    ideas into functional software solutions
+                </p>
+                <button class="pt-7">
+                    <svg class="w-6 h-6" fill="#d1d1d1"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve" stroke="#d1d1d1">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <g id="SVGRepo_iconCarrier"> <path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7 c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4 c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6 c35.5,0,63.3,23,63.3,72.4V508.1z"/> </g>
+                        
+                        </svg>
+                </button>
+                <button class="pt-7 pl-3">
+                    <svg class="w-6 h-6" viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <g id="SVGRepo_iconCarrier"> <title>twitter [#154]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)" fill="#c3c1c1"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705" id="twitter-[#154]"> </path> </g> </g> </g> </g>
+                        
+                        </svg>
+                </button>
+                </div>
+            </div>
+            <div  class="flex md:mt-0 mt-16">
+                <img class="w-56 h-80 rounded-xl float-left" src="img/guide3.avif">
+                <div class="mx-8"> 
+                <h1 class="text-2xl font-bold text-cyan-900">John Anderson</h1>
+                <h4 class="pt-8 text-pink-800 font-bold">Mountain</h4>
+                <p class="text-gray-500 pt-4">John is a meticulous numbers wizard navigating
+                    complex financial landscapes with ease
+                </p>
+                <button class="pt-7">
+                    <svg class="w-6 h-6" fill="#d1d1d1"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve" stroke="#d1d1d1">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <g id="SVGRepo_iconCarrier"> <path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7 c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4 c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6 c35.5,0,63.3,23,63.3,72.4V508.1z"/> </g>
+                        
+                        </svg>
+                </button>
+                <button class="pt-7 pl-3">
+                    <svg class="w-6 h-6" viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <g id="SVGRepo_iconCarrier"> <title>twitter [#154]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)" fill="#c3c1c1"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705" id="twitter-[#154]"> </path> </g> </g> </g> </g>
+                        
+                        </svg>
+                </button>
+                </div>
+            </div>
+            <div  class="flex md:mt-0 mt-16">
+                <img class="w-56 h-80 rounded-xl float-left" src="img/guide4.avif">
+                <div class="mx-8">
+                <h1 class="text-2xl font-bold text-cyan-900">Michael Roberts</h1>
+                <h4 class="pt-8 text-pink-800 font-bold">Outdoors Activity</h4>
+                <p class="text-gray-500 pt-4">Michael is a visionory architect with a passion
+                    for designing structures 
+                </p>
+                <button class="pt-7">
+                    <svg class="w-6 h-6" fill="#d1d1d1"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve" stroke="#d1d1d1">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <g id="SVGRepo_iconCarrier"> <path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7 c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4 c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6 c35.5,0,63.3,23,63.3,72.4V508.1z"/> </g>
+                        
+                        </svg>
+                </button>
+                <button class="pt-7 pl-3">
+                    <svg class="w-6 h-6" viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <g id="SVGRepo_iconCarrier"> <title>twitter [#154]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)" fill="#c3c1c1"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705" id="twitter-[#154]"> </path> </g> </g> </g> </g>
+                        
+                        </svg>
+                </button>
+               </div> 
+            </div>
+        </div>
+      </div>
+      <!-- Form Section -->
+          <div class="container md:flex mx-auto mt-20">
+            <div class="md:w-2/4 lg:3/4 mx-8 mb-20">
+                <h1 class="text-5xl font-bold text-cyan-500">Book a trip with us</h1>
+                <p class="text-gray-500 pt-6 mr-5">Are you ready to transform your life, achieve your goals,
+                    and make a positive change? It all starts with taking action.
+                    Embrace the opportunity to seize your future now.
+                </p>
+            </div>
+                <div class="md:w-2/4 lg:1/4 h-1/3 bg-cyan-100 shadow-2xl mx-10 rounded-xl ">
+                    <h3 class="text-2xl font-bold mx-12 py-4">Get 40%OFF on your first trip</h3>
+                    <p class="text-gray-500 mt-3 mx-4">Join our community and be the first to know about 
+                        the latest news, offers, and excitng content.
+                    </p>
+                
+                <div class="flex justify-center">
+                    <form class="mt-8 mb-3">
+                        <input class="border border-2 rounded-lg px-8 py-3 mx-10" type="email" id="email" placeholder="Your email address"><br>
+                        <button class="bg-pink-500 text-white px-16 py-3 text-nowrap mx-14  my-4 font-medium rounded-xl" type="submit">Claim Offer</button>
+                    </form>
+                </div>
+                </div>
+            
+          </div>
+
+       <!-- Footer section --> 
+        <footer class="container mt-20 bg-cyan-50 w-full mx-auto rounded-tl-lg rounded-tr-lg">
+            <div class="flex justify-around items-center pb-20 pt-20">
+            <h1 class="text-cyan-600 text-2xl font-bold">Whereway Trip</h1>
+            <nav>
+                <ul class="md:flex gap-5 md:block hidden">
+                    <li class="hover:text-gray-500 text-pink-700" ><a href="#">Home</a></li>
+                    <li class="hover:text-gray-500 text-pink-700"><a href="#">About</a></li>
+                    <li class="hover:text-gray-500 text-pink-700"><a href="#">Team</a></li>
+                    <li class="hover:text-gray-500 text-pink-700"><a href="#">Contact</a></li>
+                    <li class="hover:text-gray-500 text-pink-700"><a href="#">Packages</a></li>
+                </ul>
+            </nav>
+            <nav class="flex gap-4">
+                <button>
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="#1bcde4" xmlns="http://www.w3.org/2000/svg">
+
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    
+                    <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15V13.9999H17.0762C17.5066 13.9999 17.8887 13.7245 18.0249 13.3161L18.4679 11.9871C18.6298 11.5014 18.2683 10.9999 17.7564 10.9999H15V8.99992C15 8.49992 15.5 7.99992 16 7.99992H18C18.5523 7.99992 19 7.5522 19 6.99992V6.31393C19 5.99091 18.7937 5.7013 18.4813 5.61887C17.1705 5.27295 16 5.27295 16 5.27295C13.5 5.27295 12 6.99992 12 8.49992V10.9999H10C9.44772 10.9999 9 11.4476 9 11.9999V12.9999C9 13.5522 9.44771 13.9999 10 13.9999H12V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#1cc6e9"/> </g>
+                    
+                    </svg>
+                    </button>
+               <button>
+                <svg fill="#1bcde4" class="h-6 w-6" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" stroke="#1bcde4">
+
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    
+                    <g id="SVGRepo_iconCarrier"> <path d="M1920 311.856c-70.701 33.769-146.598 56.47-226.221 66.86 81.317-52.517 143.774-135.529 173.252-234.691-76.236 48.678-160.716 84.028-250.391 103.002-71.718-82.56-174.268-134.06-287.435-134.06-217.75 0-394.165 189.966-394.165 424.206 0 33.318 3.614 65.619 10.165 96.678C617.9 616.119 327.304 447.385 133.045 190.67c-33.77 62.57-53.309 135.53-53.309 213.233 0 147.162 91.031 276.818 196.744 353.054-64.602-2.26-157.101-21.46-157.101-53.309v5.648c0 205.327 114.41 376.658 294.55 415.849-32.978 9.487-78.38 14.795-114.409 14.795-25.412 0-55.454-2.71-79.624-7.793 50.26 168.509 193.13 291.163 365.478 294.777-134.852 113.506-306.07 181.383-490.616 181.383-31.85 0-64.038-2.033-94.758-5.873 174.494 120.17 381.176 190.532 603.67 190.532 724.97 0 1121.055-646.136 1121.055-1206.55 0-18.41-.452-36.932-1.356-55.116 77.026-59.746 143.887-134.4 196.631-219.444" fill-rule="evenodd"/> </g>
+                    
+                    </svg>
+                  </button>  
+                <button>
+                    <svg fill="#1bcde4" class="h-6 w-6" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <g id="SVGRepo_iconCarrier"> <path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7 c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4 c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6 c35.5,0,63.3,23,63.3,72.4V508.1z"/> </g>
+                        
+                        </svg>
+                </button>
+                <button>
+                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="#1bcde4" xmlns="http://www.w3.org/2000/svg">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#1cc6e9"/> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#1cc6e9"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#1cc6e9"/> </g>
+                        
+                        </svg>
+                </button>
+            </nav>
+           </div> 
+            <hr>
+            <nav >
+                <ul class="flex justify-evenly items-center py-16 text-gray-500">
+                    <li class="pl-5">Travel.All rigths reserved</li>
+                    <li>Privacy Policy</li>
+                    <li>Terma of Service</li>
+                    <li>Copyrigths &copy; 2024</li>
+                </ul>
+                
+            </nav>
+        </footer>  
+
+        <script>
+           const MobileMenu = document.querySelector(".mobile-menu")
+           const MobileIcon = document.querySelector(".mobile-icon")
+
+           MobileIcon.addEventListener('click', () => {
+
+              MobileMenu.classList.toggle("hidden")
+           })
+        </script>
+        
+</body>
+</html>
